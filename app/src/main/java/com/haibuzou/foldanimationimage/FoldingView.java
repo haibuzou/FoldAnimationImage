@@ -1,6 +1,7 @@
 package com.haibuzou.foldanimationimage;
 
 import android.content.Context;
+import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
@@ -23,6 +24,18 @@ public class FoldingView extends View {
     }
 
     public void init() {
+        mpaint = new Paint();
 
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+
+        super.onDraw(canvas);
+    }
+
+    @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
     }
 }
